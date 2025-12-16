@@ -65,8 +65,8 @@ sbatch run_parallel_job.sbatch
 
 Performance is typically evaluated using:
 
-- Speedup: \(S(p)=T(1)/T(p)\)
-- Efficiency: \(E(p)=S(p)/p\)
+- Speedup: $$(S(p)=T(1)/T(p)$$)
+- Efficiency: $$(E(p)=S(p)/p\)$$
 
 Example benchmark data (grid: \(100^3\), tolerance: \(10^{-6}\)):
 
