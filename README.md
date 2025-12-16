@@ -68,7 +68,7 @@ Performance is typically evaluated using:
 - Speedup: $$(S(p)=T(1)/T(p)$$)
 - Efficiency: $$(E(p)=S(p)/p\)$$
 
-Example benchmark data (grid: \(100^3\), tolerance: \(10^{-6}\)):
+Example benchmark data (grid: $$(100^3$$), tolerance: $$(10^{-6}$$)):
 
 | Processes | Time (s) |
 |---:|---:|
