@@ -13,7 +13,7 @@ $$
 
 This project uses:
 
-- **Discretization:** Finite Difference Method on a 3D Cartesian grid (e.g., \(100\times 100\times 100\)).
+- **Discretization:** Finite Difference Method on a 3D Cartesian grid (e.g., $$(100\times 100\times 100\))$$.
 - **Solver:** Jacobi iterative method.
 - **Parallelization:** Domain decomposition with MPI using ghost (halo) layers for boundary exchange.
 
