@@ -22,7 +22,6 @@ This project uses:
 - `jacobi3dserial.c` — Serial implementation (C)
 - `jacobi3dmpi.c` — MPI-parallel implementation (C + MPI)
 - `run_parallel_job.sbatch` — Example SLURM batch script for cluster runs
-- `Project_Report.pdf` — Methodology + math background + performance results (if included)
 
 ## Compilation & Usage
 
