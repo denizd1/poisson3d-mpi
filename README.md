@@ -7,9 +7,9 @@ This project implements a numerical solution of the **3D Poisson equation** usin
 
 The Poisson equation solved is:
 
-\[
+$$
 \nabla^2 u(x,y,z) = f(x,y,z)
-\]
+$$
 
 This project uses:
 
