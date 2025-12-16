@@ -1,0 +1,31 @@
+name: C/MPI Build Test
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Install MPI and GCC
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y build-essential openmpi-bin libopenmpi-dev
+
+    - name: Build Serial Version
+      run: gcc jacobi3dserial.c -o serial_poisson -lm
+
+    - name: Build Parallel Version
+      run: mpicc jacobi3dmpi.c -o mpi_poisson -lm
+
+    - name: Test Serial Execution
+      run: ./serial_poisson
+
+    - name: Test Parallel Execution (2 Processes)
+      run: mpirun -np 2 ./mpi_poisson
